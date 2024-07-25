@@ -20,6 +20,8 @@ services:
     volumes:
       - "db:/var/lib/mysql"
       - "./initdb.sql:/docker-entrypoint-initdb.d/initdb.sql"
+    ports:
+      - "3306:3306"
     environment:
       MARIADB_ROOT_PASSWORD: "glpi"
       MARIADB_DATABASE: "glpi"
