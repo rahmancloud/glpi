@@ -6,7 +6,7 @@
     "service": "app",
     "workspaceFolder": "/var/www/glpi",
 
-    "forwardPorts": [8080, 8090, 8025],
+    "forwardPorts": [8080, 8090, 8025, 3306],
     "portsAttributes": {
         "8080": {
             "label": "GLPI"
@@ -16,6 +16,9 @@
         },
         "8025": {
             "label": "Mailpit"
+        },
+        "3306": {
+            "label": "sql"
         }
     },
 
