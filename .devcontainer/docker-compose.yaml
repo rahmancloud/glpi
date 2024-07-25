@@ -27,6 +27,8 @@ services:
       MARIADB_PASSWORD: "glpi"
     expose:
       - "3306"
+    ports:
+      - "3306:3306"
 
   mailpit:
     container_name: "glpi-mailpit"
